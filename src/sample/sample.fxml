@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <MenuBar disable="true" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Close" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Edit">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Delete" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <TextField fx:id="tv_search_field" layoutX="3.0" layoutY="82.0" prefHeight="44.0" prefWidth="258.0" promptText="Temporarily Disabled" AnchorPane.topAnchor="82.0" />
+      <Separator layoutX="345.0" layoutY="36.0" orientation="VERTICAL" prefHeight="761.0" prefWidth="8.0" AnchorPane.bottomAnchor="3.0" AnchorPane.topAnchor="36.0" />
+      <Label layoutX="5.0" layoutY="48.0" prefHeight="27.0" prefWidth="62.0" text="Search " />
+      <Button layoutX="305.0" layoutY="41.0" mnemonicParsing="false" opacity="0.35" prefHeight="39.0" prefWidth="40.0" text="?">
+         <tooltip>
+            <Tooltip text="Search with View Name, Tag etc" textAlignment="CENTER" />
+         </tooltip>
+      </Button>
+      <ListView fx:id="list_search_result" layoutX="5.0" layoutY="131.0" prefHeight="665.0" prefWidth="338.0" AnchorPane.bottomAnchor="4.0" AnchorPane.topAnchor="131.0" />
+      <Button fx:id="btn_search" layoutX="266.0" layoutY="84.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="79.0" text="Search" />
+      <Button fx:id="btn_save" layoutX="897.0" layoutY="286.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="96.0" text="SAVE" AnchorPane.rightAnchor="7.0" AnchorPane.topAnchor="286.0" />
+      <Label layoutX="353.0" layoutY="47.0" prefHeight="27.0" prefWidth="58.0" text="Name:" />
+      <TextField fx:id="tv_name" layoutX="477.0" layoutY="42.0" prefHeight="39.0" prefWidth="420.0" promptText="Name Of the Repo" AnchorPane.leftAnchor="477.0" AnchorPane.topAnchor="42.0" />
+      <TextField fx:id="tv_dependency" layoutX="476.0" layoutY="97.0" prefHeight="39.0" prefWidth="423.0" promptText="Dependency compile code" AnchorPane.leftAnchor="476.0" AnchorPane.topAnchor="97.0" />
+      <Label layoutX="355.0" layoutY="104.0" prefHeight="27.0" prefWidth="116.0" text="Dependency:" />
+      <TextField fx:id="tv_permission" layoutX="476.0" layoutY="156.0" prefHeight="39.0" prefWidth="423.0" promptText="Permission Details" />
+      <Label layoutX="357.0" layoutY="161.0" prefHeight="27.0" prefWidth="116.0" text="Permission:" />
+      <TextField fx:id="tv_search_key" layoutX="476.0" layoutY="214.0" prefHeight="39.0" prefWidth="423.0" promptText="Search key. Separated by comma" AnchorPane.leftAnchor="476.0" />
+      <Label layoutX="355.0" layoutY="222.0" prefHeight="27.0" prefWidth="116.0" text="Search Key:" />
+      <CheckBox fx:id="cb_isDeprecated" layoutX="355.0" layoutY="293.0" mnemonicParsing="false" text="Is  Deprecated" />
+      <CheckBox fx:id="cb_isLayout" layoutX="540.0" layoutY="293.0" mnemonicParsing="false" text="Is Layout" />
+      <Button layoutX="912.0" layoutY="44.0" mnemonicParsing="false" opacity="0.35" prefHeight="39.0" prefWidth="40.0" text="?">
+         <tooltip>
+            <Tooltip text="Name Of The Repo. Example: Call, Dialer, Custom Rating Bar etc" textAlignment="CENTER" />
+         </tooltip>
+      </Button>
+      <Button layoutX="912.0" layoutY="100.0" mnemonicParsing="false" opacity="0.35" prefHeight="39.0" prefWidth="40.0" text="?">
+         <tooltip>
+            <Tooltip text="If it has any external library dependency or not" textAlignment="CENTER" />
+         </tooltip>
+      </Button>
+      <Button layoutX="912.0" layoutY="155.0" mnemonicParsing="false" opacity="0.35" prefHeight="39.0" prefWidth="40.0" text="?">
+         <tooltip>
+            <Tooltip text="Does it need any User Level permission or not. Example: Internet, Call, Storage" textAlignment="CENTER" />
+         </tooltip>
+      </Button>
+      <Button layoutX="912.0" layoutY="214.0" mnemonicParsing="false" opacity="0.35" prefHeight="39.0" prefWidth="40.0" text="?">
+         <tooltip>
+            <Tooltip text="Add Search key and Separate it by comma. Example: View, Custom View, Xml, Circle Progress Bar etc" textAlignment="CENTER" />
+         </tooltip>
+      </Button>
+      <Button fx:id="btn_delete" layoutX="795.0" layoutY="286.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="96.0" text="DELETE" AnchorPane.rightAnchor="110.0" AnchorPane.topAnchor="286.0" />
+      <Button fx:id="btn_new" layoutX="690.0" layoutY="287.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="96.0" text="NEW" AnchorPane.rightAnchor="210.0" AnchorPane.topAnchor="286.0" />
+      <JFXTextArea fx:id="tv_code_snipet_area" layoutX="350.0" layoutY="334.0" prefHeight="466.0" prefWidth="649.0" promptText="Enter you code here" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="334.0" />
+   </children>
+</AnchorPane>

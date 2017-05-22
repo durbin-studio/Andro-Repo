@@ -1,0 +1,22 @@
+This is the lite version of Android Repo. The full version uses JDBC to Connect with SQL server.
+As many host machine might not have SQL Server installed, therefore, this is the lite version that
+works with the .json file.
+
+As for the database limitation the search functionality does not work, therefore it's been left disabled.
+
+To Run:
+
+Extract all the Content in the same root directory. (Android Repo.jar and repo.json)
+Make sure, java (version 8) is installed on the host machine, if not then please install java from 
+this link:
+
+http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html
+
+Just double click on the Android Repo.jar, it should start.
+
+
+Features:
+Android Repo is a handy toolkit for Android Development. It can quickly store code, references,
+xmls, dependencies, permissions etc in the local machine. As it is made with java, so it is cross
+platform compatible. One can quickly search, save, update and delete mostly used or needed codes and
+sample references.
